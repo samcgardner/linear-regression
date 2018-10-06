@@ -1,0 +1,21 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 77c074a4d28fbb592a26698e428a944d99ce07356cfe1ec8719c6fa225f021e8
+
+name:           linear-regression
+version:        0.0.0
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+
+executable linear-regression
+  main-is: Main.hs
+  other-modules:
+      Paths_linear_regression
+  hs-source-dirs:
+      src/main
+  default-language: Haskell2010

@@ -1,0 +1,4 @@
+executables:
+ linear-regression:
+   main: Main.hs
+   source-dirs: src/main
