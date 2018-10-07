@@ -16,8 +16,8 @@ newThetas :: Coefficients -> Float -> TrainingSet -> Coefficients
 newThetas thetas alpha dataset =
   let deltas = map (calculateDelta thetas) examples
       adjustedDeltas = adjustDeltas deltas examples
-      newt0 = t0 - 0.5 * alpha * avg deltas
-      newt1 = t1 - 0.5 * alpha * avg adjustedDeltas
+      newt0 = t0 - alpha * avg deltas
+      newt1 = t1 - alpha * avg adjustedDeltas
    in Coefficients (newt0, newt1)
   where
     Coefficients (t0, t1) = thetas

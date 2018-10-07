@@ -1,4 +1,10 @@
+library:
+  source-dirs: src
+  exposed-modules:
+    - Lib
+    - Types
+
 executables:
  linear-regression:
    main: Main.hs
-   source-dirs: src/main
+   source-dirs: src
