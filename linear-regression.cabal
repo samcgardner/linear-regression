@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: e2db717cd42259c7171b3f8dd54700e5237378add0053b00bd7a42b4d111ca0c
+-- hash: d57e266b2c8c7de7efb7a773b95c72bb36e12e8e2b53fe4904235de02f92b777
 
 name:           linear-regression
 version:        0.0.0
@@ -21,12 +21,18 @@ library
       Paths_linear_regression
   hs-source-dirs:
       src
+  build-depends:
+      base >=4.11.1.0 && <5
   default-language: Haskell2010
 
 executable linear-regression
   main-is: Main.hs
   other-modules:
+      Lib
+      Types
       Paths_linear_regression
   hs-source-dirs:
-      src/main
+      src
+  build-depends:
+      base >=4.11.1.0 && <5
   default-language: Haskell2010

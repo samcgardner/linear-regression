@@ -8,3 +8,6 @@ executables:
  linear-regression:
    main: Main.hs
    source-dirs: src
+
+dependencies:
+  - base >= 4.11.1.0 && < 5
