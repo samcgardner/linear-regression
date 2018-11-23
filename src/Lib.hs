@@ -34,7 +34,6 @@ calculateDelta thetas example = t0 + t1 * x - y
 adjustDeltas :: [Float] -> [Example] -> [Float]
 adjustDeltas deltas examples =
   let xs = map (\(Example (x, _)) -> x) examples
-      zipped = zip deltas xs
-   in map (uncurry (*)) zipped
+  in zipWith (*) deltas xs
 
 avg xs = realToFrac (sum xs) / genericLength xs
